@@ -24,8 +24,6 @@
   <img src="https://live.staticflickr.com/65535/53415132204_0b73c4c995_o.gif" width="700" alt="App Animation Example Placeholder" onerror="this.style.display='none'"/>
 </a>
 
-> **🔥 Quick Tip for Manamnath:** *Record a 5-second screen recording GIF of yourself using the app (with the Matrix rain and Smart Auto flashing) and replace the image link above with `./preview.gif`. A sick GIF is the secret to 1,000+ GitHub stars!*
-
 <br>
 
 <div align="center">
