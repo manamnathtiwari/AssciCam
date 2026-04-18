@@ -68,6 +68,36 @@ If you're reading this, you probably care about how things are built. I built AS
 
 <br/>
 
+## 🚀 Quick Start for Developers
+
+Want to spin this up locally and mess with the code? It takes less than 2 minutes.
+
+**Prerequisites:** You need [Node.js](https://nodejs.org/) (v18+) installed.
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/manamnathtiwari/AssCam.git
+
+# 2. Enter the directory
+cd AssCam
+
+# 3. Install the dependencies
+npm install
+
+# 4. Start the blazing fast Vite development server
+npm run dev
+```
+Open `http://localhost:5173/` in your browser. 
+*(Note: Ensure you allow local camera permissions when your browser prompts you!)*
+
+**To build for production:**
+```bash
+npm run build
+```
+This generates a highly optimized `/dist` folder ready to be deployed instantly on Vercel, Netlify, or GitHub Pages.
+
+<br/>
+
 ## 👋 Meet the Mind Behind It
 
 Hi, I'm **Manamnath Tiwari**. 
