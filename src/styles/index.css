@@ -294,30 +294,35 @@ input { outline: none; }
 
 .at-widget__scanning { display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 30px 0; color: rgba(255,255,255,0.6); font-size: 14px; font-weight: 500; }
 
-/* Sidebar Sections */
-.control-panel__sections { flex: 1; overflow-y: auto; padding: 0 16px 16px; display: flex; flex-direction: column; gap: 12px; }
-.control-panel__sections::-webkit-scrollbar { width: 6px; }
-.control-panel__sections::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 3px; }
-
-.section-accordion {
-  background: rgba(0,0,0,0.2); border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,0.05); overflow: hidden; transition: var(--transition);
+/* Sidebar Tabs */
+.tab-ribbon {
+  display: flex; gap: 8px; padding: 0 16px 16px; overflow-x: auto; scrollbar-width: none;
+  border-bottom: 1px solid rgba(255,255,255,0.05); margin-bottom: 16px; flex-shrink: 0;
 }
-.section-accordion--locked { opacity: 0.5; pointer-events: none; border-color: rgba(163, 113, 247, 0.2); background: rgba(0,0,0,0.4); }
+.tab-ribbon::-webkit-scrollbar { display: none; }
 
-.section-accordion__header {
-  width: 100%; display: flex; align-items: center; padding: 16px;
-  background: transparent; color: var(--text-primary); font-size: 14px; font-weight: 700; transition: var(--transition);
+.tab-btn {
+  display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 10px 12px; border-radius: var(--radius-lg);
+  background: transparent; color: var(--text-secondary); transition: var(--transition); min-width: 64px; position: relative;
 }
-.section-accordion__header:hover { background: rgba(255,255,255,0.05); }
-.section-accordion--open .section-accordion__header { border-bottom: 1px solid rgba(255,255,255,0.05); background: rgba(255,255,255,0.02); }
+.tab-btn:hover { background: rgba(255,255,255,0.05); color: var(--text-primary); }
+.tab-btn--active { background: rgba(255,255,255,0.1); color: #fff; box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1); }
+.tab-btn--locked { opacity: 0.5; pointer-events: none; }
+.tab-btn__icon { font-size: 20px; transition: transform 0.2s; }
+.tab-btn:hover .tab-btn__icon { transform: scale(1.1); }
+.tab-btn__label { font-size: 11px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+.tab-btn__dot { position: absolute; top: 8px; right: 8px; width: 6px; height: 6px; border-radius: 50%; background: var(--purple); box-shadow: 0 0 8px rgba(163, 113, 247, 0.8); }
 
-.section-accordion__icon { font-size: 18px; margin-right: 12px; opacity: 0.8; }
-.section-accordion__label { flex: 1; text-align: left; }
-.section-accordion__auto-tag { font-size: 10px; background: var(--purple); color: #fff; padding: 2px 8px; border-radius: var(--radius-full); margin-right: 12px; font-weight: 800; letter-spacing: 0.05em; }
-.section-accordion__chevron { font-size: 18px; color: var(--text-dim); transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1); }
-.section-accordion__chevron--open { transform: rotate(90deg); color: var(--text-primary); }
+.tab-content { flex: 1; overflow-y: auto; padding: 0 16px 16px; display: flex; flex-direction: column; transition: var(--transition); }
+.tab-content::-webkit-scrollbar { width: 6px; }
+.tab-content::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 3px; }
+.tab-content--locked { opacity: 0.5; pointer-events: none; filter: grayscale(50%); }
 
-.section-accordion__content { padding: 20px 16px; }
+.tab-content__header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.tab-content__header h3 { font-size: 18px; font-weight: 800; color: #fff; display: flex; align-items: center; gap: 10px; }
+.tab-content__auto-badge { font-size: 10px; font-family: 'Inter', sans-serif; background: var(--purple); color: #fff; padding: 4px 10px; border-radius: var(--radius-full); font-weight: 800; letter-spacing: 0.1em; }
+
+.tab-content__body { display: flex; flex-direction: column; gap: 24px; }
 
 /* Friendly Controls Styling */
 .control-group { display: flex; flex-direction: column; gap: 20px; }
