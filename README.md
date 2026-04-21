@@ -33,6 +33,20 @@
   <img src="https://img.shields.io/badge/PRs-WELCOME-brightgreen?style=flat-square&logo=github"/>
 </p>
 
+<!-- Live Demo Button -->
+<p align="center">
+  <a href="https://asscam.onrender.com" target="_blank">
+    <img src="https://img.shields.io/badge/🌐_LIVE_DEMO-asscam.onrender.com-6B9DFF?style=for-the-badge&logoColor=white" height="40"/>
+  </a>
+</p>
+
+<!-- Cold Start Warning -->
+<p align="center">
+  <img src="https://img.shields.io/badge/⏳_Free_Tier_Note-Render_may_take_5%2B_minutes_to_wake_up_on_first_load._Grab_a_coffee!-FF6B6B?style=flat-square"/>
+</p>
+
+<br/>
+
 <!-- Navigation Quick Links -->
 <p align="center">
   <a href="#-the-concept"><img src="https://img.shields.io/badge/🎯_Concept-1a1a2e?style=for-the-badge" height="32"/></a>
