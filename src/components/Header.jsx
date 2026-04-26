@@ -29,7 +29,7 @@ export default function Header({ autoEnabled, onToggleAuto, autoStatus }) {
         {/* Logo */}
         <div className="header-logo">
           <span className="logo-text">
-            <span className="logo-ass">ASS</span><span className="logo-cam">CAM</span>
+            <span className="logo-ass">ASSCI</span><span className="logo-cam">CAM</span>
           </span>
           <span className="logo-pill">STUDIO</span>
         </div>
